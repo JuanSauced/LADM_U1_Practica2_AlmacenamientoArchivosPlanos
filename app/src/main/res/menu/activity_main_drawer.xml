@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Agregar"
+            android:icon="@drawable/ic_baseline_fastfood_24"
+            android:title="@string/menu_Agregar" />
+        <item
+            android:id="@+id/nav_Actualizar"
+            android:icon="@drawable/ic_baseline_whatshot_24"
+            android:title="@string/menu_Actualizar" />
+        <item
+            android:id="@+id/nav_Mostrar"
+            android:icon="@drawable/ic_baseline_remove_red_eye_24"
+            android:title="@string/Menu_Mostrar" />
+        <item
+            android:id="@+id/nav_Eliminar"
+            android:icon="@drawable/ic_baseline_no_food_24"
+            android:title="@string/menu_Eliminar" />
+    </group>
+</menu>

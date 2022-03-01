@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/burguer2"
+        android:layout_width="113dp"
+        android:layout_height="102dp"
+        android:layout_below="@+id/txtDesc"
+        android:paddingStart="20dp"
+        android:src="@drawable/burguer2" />
+
+    <TextView
+        android:text="Nombre Combo"
+        android:id="@+id/etiquetaNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNC"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etiquetaNC"
+        android:inputType="text" />
+
+    <TextView
+        android:text="Precio"
+        android:id="@+id/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/etiquetaNC" />
+
+    <EditText
+        android:id="@+id/txtPrecio"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etiquetaNC"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/etiquetaNC"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/descuento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precio"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:text="Descuento"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDesc"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrecio"
+        android:layout_toRightOf="@+id/etiquetaNC"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:layout_toRightOf="@+id/burguer2"
+        android:layout_below="@+id/txtDesc"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
